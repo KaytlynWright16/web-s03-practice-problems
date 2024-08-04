@@ -11,7 +11,11 @@
     */
     const numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     let count = 0;
-    //ENTER YOUR CODE HERE
+    numbersArray.forEach((num) => {
+      if (num % 2 == 0) {
+        count++;
+      }
+    }); // work on this. 
 
     console.log(`There are ${count} even numbers in the array`);
     /*
@@ -19,7 +23,9 @@
     */
     const strings = ['hello', 'world', 'javascript', 'coding'];
     const uppercaseStrings = [];
-    //ENTER YOUR CODE HERE
+    lowercaseStrings.forEach((string) => {
+      uppercaseStrings.push(string.toUpperCase());
+    }); // work on this 
 
     console.log(uppercaseStrings);
     /*
@@ -27,7 +33,11 @@
    */
     const duplicateNumbers = [1, 2, 3, 4, 5, 1, 2, 3, 6, 7, 8, 9, 5];
     const uniqueNumbers = [];
-    //ENTER YOUR CODE HERE
+    debuggingNumbers.forEach((num, index) => {
+      if (index < 3) {
+        console.log(num);
+      }
+    }); //work on this 
 
     console.log(uniqueNumbers);
     /*
@@ -36,19 +46,22 @@
 
     const numbersToSum = [1, 2, 3, 4, 5];
     let sum = 0;
-    //ENTER YOUR CODE HERE
+    numbersToSum.forEach((num) => {
+      sum += num;
+    }); //work on this 
+
 
     console.log(sum);
     /*
     PROBLEM 5 (DEBUGGING): The following commented code is supposed to print out the first three elements of an array, but it's not working. Uncomment the code and fix the issue. Check your results in the console.
     */
 
-    // const debuggingNumbers = [1,2,3,4,5];
-    // debuggingNumbers.forEach((num, index) => {
-    //   if(index <= 3) {
-    //     console.log(num)
-    //   }
-    // })
+    const debuggingNumbers = [1, 2, 3, 4, 5];
+    debuggingNumbers.forEach((num, index) => {
+      if (index < 3) {
+        console.log(num);
+      }
+    }); //work on this 
 
   </script>
 

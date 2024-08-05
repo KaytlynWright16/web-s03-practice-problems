@@ -9,31 +9,41 @@
     /*
     PROBLEM 1: Create a new array with the .map array method using the numbers array that has double the value of each number and log the results in the console.
     */
-    //ENTER YOUR CODE HERE
+    let doubleNum = numbers.map(number => number * 2);
+    console.log(doubleNum);
 
     /*
     PROBLEM 2: Create a new array with the .map array method using the numbers array with the value of each number divided in half and log the results in the console.
     */
-    //ENTER YOUR CODE HERE
+    let halfedNum = numbers.map(number => number / 2);
+    console.log(halfedNum);
 
     /*
    PROBLEM 3: Create a new array with the .map array method using the strings array with only the first character in each string and log the results in the console.
    */
     const strings = ['apple', 'chocolate', 'cherry', 'pecan']
-    //ENTER YOUR CODE HERE
+    let firstLett = strings.map((str) => {
+      return str[0];
+    })
+    console.log(firstLett); //work on this. 
+    //remember when answering questions like this it contains to the indicies. 
 
     /*
     PROBLEM 4: Create a new array with the .map array method using the strings array with only the last character in each string and log the results in the console.
     */
-    //ENTER YOUR CODE HERE
+    const lastChar = strings.map((string) => {
+      return string[string.length - 1];
+    });
+    console.log(lastChar);
+    //work on this 
 
     /*
     PROBLEM 5 (DEBUGGING): The following commented code is supposed to return a new array that adds the word 'pie' to the end of each string in the strings array but something is wrong.  Uncomment and fix the bug. Check the results in the console.
     */
-    // const pieArray = strings.map((string) => {
-    // string = string + 'pie'
-    // })
-    // console.log(pieArray)
+    const pieArray = strings.map((string) => {
+      return string + " pie";
+    });
+    console.log(pieArray); //work on this. 
   </script>
 
 </body>

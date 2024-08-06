@@ -10,21 +10,33 @@
     Use destructuring assignment to extract the properties of the returned object into variables
     called personName and personAge.
     */
-    //ENTER YOUR CODE HERE
+    function getPerson() {
+      return {name: 'Bill', age: 33};
+    }
+    let {name, age} = getPerson();
+    console.log(name, age); 
 
     /*
     PROBLEM 2: Decalre a function called getFullName that returns an object with firstName
     and lastName properties. Use destructuring assignment to extract the properties of the
     returned object into variables called firstName and lastName.
     */
-    //ENTER YOUR CODE HERE
+    function getFullName() {
+      return {firstName: 'Kat', lastName: 'Wright'};
+    }
+    let {firstName, lastName} = getFullName();
+    console.log(firstName, lastName);
 
      /*
     PROBLEM 3: Declare a function called getRectangleDimensions that returns an object with
     width and height properties. Use destructuring assignment to extract the properties of the
     returned object into variables called width and height.
     */
-    //ENTER YOUR CODE HERE
+   function getRectangleDimensions() {
+    return {width: 36, height: 55};
+   }
+   let {width, height} = getRectangleDimensions();
+   console.log(width, height);
 
     /*
     /*
@@ -32,7 +44,11 @@
     radius property. Use destructuring assignment to extract the properties of the
     returned object into variables called radius.
     */
-    //ENTER YOUR CODE HERE
+    function getCircleRadius() {
+      return {radius: 'The circle has a radius of 54'};
+    }
+    let {radius} = getCircleRadius();
+    console.log(radius);
 
     /*
     PROBLEM 5 (DEBUGGING): The following function is supposed to return the ingredients
@@ -40,15 +56,16 @@
     it returns the correct ingredients.
     */
 
-   /*
+   
     function getRecipeIngredients(recipe) {
       return {
-      name: "Chocolate Chip Cookies",
-      ingredients: ["flour", "sugar", "chocolate chips", "butter", "eggs"]
+        name: "Chocolate Chip Cookies",
+        ingredients: ["flour", "sugar", "chocolate chips", "butter", "eggs"]
       };
     }
-    let {name, ingredients} = getRecipeIngredients(name, ingredients);
-  */
+    let { name, ingredients } = getRecipeIngredients(); 
+    //work on this!!!!!!!!!!!
+  
   </script>
 
 </body>

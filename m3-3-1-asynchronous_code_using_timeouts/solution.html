@@ -76,17 +76,7 @@
         }
     */
     //Due to the asynchronous nature of setTimeout, the value of i in the callback function will always be 11, because by the time the function is executed, the loop has already finished and the value of i has been incremented to 11. To fix this, you can wrap a function that will execute around the setTimeout function to capture the value of i at each iteration.
-    function count() {
-      for (var i = 0; i <= 10; i++) {
-        (function (i) {
-          setTimeout(function () {
-            console.log(i);
-          }, i * 2000);
-        })(i);
-      }
-    }
-
-    count();
+    
 
   </script>
 

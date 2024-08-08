@@ -9,13 +9,19 @@
     PROBLEM 1: Write a function that logs a message to the console when a user clicks.
     */
 
-    //ENTER YOUR CODE HERE
+    function loggedMessage(message) {
+      console.log(message);
+    }
+    window.onclick = () => loggedMessage('Message clicked'); //study this 
 
     /*
     PROBLEM 2: Write a function called clickCounter that increments a counter variable and logs the current count to the console each time the user clicks.
     */
 
-    //ENTER YOUR CODE HERE
+    function clickCounter(counter) {
+      console.log(counter);
+    }
+window.onclick = () => console.log(clickCounter(counter++)); //study! 
 
      /*
     PROBLEM 3: Rewrite this function into a browser event using window.onclick.
@@ -33,7 +39,17 @@
     }
     */
 
-    //ENTER YOUR CODE HERE
+    window.onclick = () => {
+      const currentColor = 'red';
+
+      if (currentColor === 'red') {
+        console.log('Background is red');
+        currentColor = 'green';
+      } else {
+        console.log('Background is green');
+        currentColor = 'red';
+      }
+    } //study! didnt even know where to start 
 
     /*
     PROBLEM 4: Create a function that prints a random color to the console every time the user clicks anywhere on the page. Here is the formula for a random color:
@@ -41,7 +57,10 @@
     const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
     */
 
-    //ENTER YOUR CODE HERE
+    window.onclick = () => {
+      const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+      console.log(randomColor);
+    } //study!
 
 
     /*
@@ -50,14 +69,12 @@
     window.onload is basically the same as onclick except for when the page loads: https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
     */
 
-    /*
     window.onload = () => {
-      let counter;
+      let counter = 0;
       window.onclick = () => {
         console.log(`Click count: ${++counter}`);
       };
     };
-    */
 
   </script>
 
